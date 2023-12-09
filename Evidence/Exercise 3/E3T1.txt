@@ -1,0 +1,6 @@
+# Describe GuardDuty findings that were detected related to the brute force attack
+- It was detected: UnauthorizedAccess:EC2/SSHBruteForce 
+
+# Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+- The details of attack can be write to S3 bucket to esay monitoring and tracking acnormal action.
+- The source of information for this exercise could be found in the VPC Flow Logs, stored on S3.
