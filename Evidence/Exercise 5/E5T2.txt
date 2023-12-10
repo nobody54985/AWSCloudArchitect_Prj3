@@ -2,30 +2,29 @@
 
 ## Scan infrastructure as code templates
 
-- Chef Inspect: https://github.com/inspec/inspec
-- Regula: https://github.com/fugue/regula
-- Terrascan: https://github.com/accurics/terrascan
+- Chef Inspect (https://github.com/inspec/inspec) : Open-source testing and auditing framework created by Chef for validating compliance, security, and policy requirements.
+- Regula  (https://github.com/fugue/regula) : Allows users to define and check for compliance violations in Terraform, CloudFormation, and other IaC files. The goal is to help organizations ensure that their cloud infrastructure adheres to security best practices and compliance standards.
+- Terrascan (https://github.com/accurics/terrascan) : Provides out-of-the-box policies so that you can scan IaC against common policy standards such as the CIS Benchmark.
+- Cfripper (https://github.com/Skyscanner/cfripper): Library and CLI security analyzer for AWS CloudFormation templates
 
 
 ### Example vulnerability
-
 - Server Side Encryption (SSE) not enabled
 - Access logs not enabled to resources that support it
 
 
 ##Scan AMI’s or containers for OS vulnerabilities
-
-- Ansible
+- Ansible (https://github.com/ansible/ansible) : Handles configuration management, application deployment, cloud provisioning, ad-hoc task execution, network automation, and multi-node orchestration.
+- Trivy(https://github.com/aquasecurity/trivy) : Vulnerability scanner for containers and other artifacts.
 
 ### Example vulnerability
-
 - SSH with root account still can log in
 
 ##Scan an AWS environment for cloud configuration vulnerabilities
-
-- AWS Config
-- AWS Inspector
-- AWS GuardDuty
+- AWS Config (https://aws.amazon.com/config/) : Enables assessing, auditing, and evaluating the configurations of AWS resources.
+- AWS Inspector (https://aws.amazon.com/inspector/) : Automatically assesses applications for exposure, vulnerabilities, and deviations from best practices.
+- AWS GuardDuty (https://aws.amazon.com/guardduty/) : Threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts, workloads, and data stored in Amazon S3.
 
 ### Example vulnerability
-- Unsecured privileged users:  Dont set up  MFA or second verify. 
+- Unsecured privileged users:  Dont set up  MFA or second verify.
+- Weak password rules.
